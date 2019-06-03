@@ -1,5 +1,5 @@
 <?php
-require '../src/connection.php';
+require '../../src/connection.php';
 $bdd = Connection::connect();
 
 if(isset($_POST['titre']) 
@@ -16,10 +16,12 @@ if(isset($_POST['titre'])
 $requete = $bdd->prepare('INSERT INTO experience(title_exp, company, start_date_exp, end_date_exp, resume_exp) VALUE (?, ?, ?, ?, ?)') OR die(print_r($bdd->errorInfo()));
 $requete->execute(array($titre, $company, $startDate, $endDate, $resume));
 
-header('location: ./');
+header('location: ../');
 exit();
 
 }
+
+Connection::disconnect();
 
 ?>
 

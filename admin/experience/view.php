@@ -11,7 +11,7 @@ require 'view_exp.php';
 </head>
 
 <body>
-    <h1>Modifier une formation</h1>
+    <h1>Modifier une expérience</h1>
     <div>
     <form method="POST" action="view_exp.php">
     <table>

@@ -27,7 +27,7 @@ session_start();
         <div>
             <div>
                 <h2>Education</h2>
-                <a href="form_insert_for.php"><span>+</span> Ajouter</a>
+                <a href="formation/form_insert_for.php"><span>+</span> Ajouter</a>
             </div>
             <table>
             <?php include('formation/education.php') ?>

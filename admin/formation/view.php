@@ -5,13 +5,13 @@ require 'view_for.php';
 
 <head>
     <meta charset="utf-8">
-    <title>Modifier une expérience</title>
+    <title>afficher une formation</title>
     <link rel="stylesheet" type="text/css" href="../design/default.scss">
 
 </head>
 
 <body>
-    <h1>Modifier une formation</h1>
+    <h1>Votre formation</h1>
     <div>
     <form method="POST" action="view_for.php">
     <table>

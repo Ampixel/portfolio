@@ -6,22 +6,22 @@ session_start();
 
 <head>
     <meta charset="utf-8">
-    <title>Ajouter une expérience</title>
-    <link rel="stylesheet" type="text/css" href="../design/default.scss">
+    <title>Modifier une expérience</title>
+    <link rel="stylesheet" type="text/css" href="../../design/default.scss">
 
 </head>
 
 <body>
-    <h1>Ajouter une expérience</h1>
+    <h1>Modifier une formation</h1>
     <div>
-    <form method="POST" action="insert_exp.php">
+    <form method="POST" action="update_exp.php">
     <table>
         <tr>
             <td>Titre</td>
             <td><input type="text" name="titre" /></td>
         </tr>
         <tr>
-            <td>Company</td>
+            <td>School</td>
             <td><input type="text" name="company" /></td>
         </tr>
         <tr>
@@ -37,8 +37,8 @@ session_start();
             <td><input type="text" name="resume" /></td>
         </tr>
     </table>
-    <button type="submit">Ajouter</button>
-    <a href="../index.php">retour liste</a>
+    <button type="submit">Modifier</button>
+    <a href="../index.php">retour liste</a> 
 </form>
     </div>
         

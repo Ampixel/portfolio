@@ -21,7 +21,7 @@ session_start();
                 <a href="form_insert_exp.php"><span>+</span> Ajouter</a>
             </div>
             <table>
-                <?php include('experience.php') ?>
+                <?php include('experience/experience.php') ?>
             </table>
         </div>
         <div>
@@ -30,7 +30,7 @@ session_start();
                 <a href="form_insert_for.php"><span>+</span> Ajouter</a>
             </div>
             <table>
-            <?php include('education.php') ?>
+            <?php include('formation/education.php') ?>
             </table>
         </div>
         <a href="../index.php">Retour portfolio</a>

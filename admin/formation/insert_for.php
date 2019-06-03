@@ -1,5 +1,5 @@
 <?php
-require '../src/connection.php';
+require '../../src/connection.php';
 $bdd = Connection::connect();
 
 if(isset($_POST['titre']) && isset($_POST['school']) && isset($_POST['start_date']) && isset($_POST['end_date'])&& isset($_POST['resume'])){

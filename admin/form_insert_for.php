@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Ajouter une expérience</title>
-    <link rel="stylesheet" type="text/css" href="../design/default.scss">
+    <link rel="stylesheet" type="text/css" href="../../design/default.scss">
 
 </head>
 

@@ -38,7 +38,7 @@ session_start();
         </tr>
     </table>
     <button type="submit">Modifier</button>
-    <a href="index.php">retour liste</a>
+    <a href="index.php">retour liste</a> 
 </form>
     </div>
         

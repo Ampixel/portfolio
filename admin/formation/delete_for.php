@@ -6,11 +6,14 @@ if (!empty($_GET['id'])) {
     $id = checkInput($_GET['id']);
 }
 
+// SI POST n'est pas vide -> DELETE
 if(!empty($_POST)){
+    $id = checkInput($_POST['id']);
     $bdd = Connection::connect();
     $requete = $bdd->prepare("DELETE FROM formation WHERE id_formation = ?");
     $requete->execute(array($id));
-    header('location: ../');
+
+    header('location: ../index.php');
     exit();
 
     Connection::disconnect();

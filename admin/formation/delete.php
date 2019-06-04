@@ -17,13 +17,14 @@ require 'delete_for.php';
 <body>
     <h1>Supprimer une formation</h1>
     <div>
-    <form method="POST" action="<?php echo 'delete_for.php?id='.$id;?>">
-    <p>Êtes-vous sûr de vouloir supprimer ?</p>
-    <button type="submit">Oui</button>
-    <a href="../index.php">Non</a>
-</form>
+        <form method="POST" action="delete_for.php">
+            <input type="hidden" name="id" value="<?php echo $id;?>"/>
+            <p>Êtes-vous sûr de vouloir supprimer ?</p>
+            <button type="submit">Oui</button>
+            <a href="../index.php">Non</a>
+        </form>
     </div>
-        
+
 </body>
 
 </html>

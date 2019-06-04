@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'insert_exp.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -7,7 +8,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Ajouter une expérience</title>
-    <link rel="stylesheet" type="text/css" href="../design/default.scss">
+    <link rel="stylesheet" type="text/css" href="../../design/default.scss">
 
 </head>
 
@@ -18,19 +19,19 @@ session_start();
     <table>
         <tr>
             <td>Titre</td>
-            <td><input type="text" name="titre" /></td>
+            <td><input type="text" name="titre" required /></td>
         </tr>
         <tr>
-            <td>Company</td>
-            <td><input type="text" name="company" /></td>
+            <td>Entreprise</td>
+            <td><input type="text" name="company" required/></td>
         </tr>
         <tr>
             <td>date début</td>
-            <td><input type="date" name="start_date" /></td>
+            <td><input type="date" name="start_date" required/></td>
         </tr>
         <tr>
             <td>date fin</td>
-            <td><input type="date" name="end_date" /></td>
+            <td><input type="date" name="end_date" required/></td>
         </tr>
         <tr>
             <td>Résumé</td>
@@ -38,7 +39,7 @@ session_start();
         </tr>
     </table>
     <button type="submit">Ajouter</button>
-    <a href="../index.php">retour liste</a>
+    <a href="../index.php"">retour liste</a>
 </form>
     </div>
         

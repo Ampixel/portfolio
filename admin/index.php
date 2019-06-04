@@ -18,7 +18,7 @@ session_start();
         <div>
             <div>
                 <h2>Experiences</h2>
-                <a href="form_insert_exp.php"><span>+</span> Ajouter</a>
+                <a href="experience/form_insert_exp.php"><span>+</span> Ajouter</a>
             </div>
             <table>
                 <?php include('experience/experience.php') ?>

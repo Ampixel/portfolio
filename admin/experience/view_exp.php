@@ -8,7 +8,7 @@ if(!empty($_GET['id']))
 }
 
 $db = Connection::connect();
-$requete = $db->prepare("SELECT * FROM experience WHERE experience.id_experience = ?");
+$requete = $db->prepare("SELECT * FROM experience WHERE id_experience = ?");
 $requete->execute(array($id));
 $item = $requete->fetch();
 Connection::disconnect();

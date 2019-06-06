@@ -7,7 +7,7 @@ $item = $requete->fetch();
 while ($item = $requete->fetch()) {
 
     if ($item['id_formation'] % 2) {
-        echo '<table class="element_rigth">';
+        echo '<table class="element_rigth element_post">';
         echo '<tr>';
         echo '<td>' . htmlspecialchars($item['title_for']) . '</td>';
         echo '<td>' . htmlspecialchars($item['school']) . '</td>';

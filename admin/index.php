@@ -33,6 +33,11 @@ session_start();
             <?php include('formation/education.php') ?>
             </table>
         </div>
+        
+            <p>
+                <a href="../deconnection.php">Déconnexion</a>
+            </p>
+
         <a href="../index.php">Retour portfolio</a>
     </div>
 </body>

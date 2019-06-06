@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// require('element.php');
 ?>
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@ session_start();
 <body>
     <!-- HEADER -->
     <header class="container">
-    <a href="page_connexion.php">Se connecter</a>
+        <a href="page_connexion.php">Se connecter</a>
         <nav>
             <ul>
                 <li>menu</li>
@@ -29,46 +29,32 @@ session_start();
     </header>
     <!-- FIN HEADER -->
     <!-- SECTION RESUME -->
-    <section id="resume">
+    <section id="resume" >
         <div class="container">
-            <div class="section-title">
+            <div class="section_title">
                 <h2>My resume</h2>
                 <span class="border"></span>
             </div>
-            <div class="row">
-                <div class="title">
-                    <a>Experiences</a>
-                    <span>icone</span>
+            <div>
+                <div class="element_category">
+                    <h3>Expériences</h3>
+                    <div class="element_category_icon">
+                        <div class="iconspace"></div>
+                    </div>
                 </div>
-                <div class="element_rigth">
-                    <p>Titre</p>
-                    <p>Company</p>
-                    <p>Date</p>
-                    <p>Resume</p>
-                </div>
-                <div class="element_left">
-                    <p>Titre</p>
-                    <p>Company</p>
-                    <p>Date</p>
-                    <p>Resume</p>
+                <div>
+                    <?php include('element_exp.php') ?>
                 </div>
             </div>
-            <div class="row">
-                <div class="title">
-                    <a>Education</a>
-                    <span>icone</span>
+            <div class="for_category">
+                <div class="element_category ">
+                    <h3>Formations</h3>
+                    <div class="element_category_icon">
+                        <div class="iconspace"></div>
+                    </div>
                 </div>
-                <div class="element_rigth">
-                    <p>Titre</p>
-                    <p>Company</p>
-                    <p>Date</p>
-                    <p>Resume</p>
-                </div>
-                <div class="element_left">
-                    <p>Titre</p>
-                    <p>Company</p>
-                    <p>Date</p>
-                    <p>Resume</p>
+                <div>
+                    <?php include('element_for.php') ?>
                 </div>
             </div>
         </div>

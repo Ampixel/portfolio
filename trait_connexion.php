@@ -26,6 +26,12 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
         if($password == $user['password']){
             $_SESSION['connect'] = 1;
             $_SESSION['email'] = $user['email'];
+
+            // if(isset($_POST['connect'])){
+            //     // si il existe un cookies qui s'appel log, verifier le contenu dans la bdd et on créer des session en conséquence               
+            //     setcookie('log', $user['secret'], time() + 365*24*3600, '/', null, false, true);
+            // }
+
             header('location: admin/index.php');
             exit();
         }

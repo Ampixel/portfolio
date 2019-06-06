@@ -6,8 +6,8 @@ while ($item = $requete->fetch()) {
     echo '<tr>';
     echo '<td>' . htmlspecialchars($item['title_for']) . '</td>';
     echo '<td>' . htmlspecialchars($item['school']) . '</td>';
-    echo '<td>' . htmlspecialchars($item['start_date_for']) . '</td>';
-    echo '<td>' . htmlspecialchars($item['end_date_for']) . '</td>';
+    echo '<td>' . substr($item['start_date_for'], 0, 10) . '</td>';
+    echo '<td>' . substr($item['end_date_for'], 0, 10) . '</td>';
     echo '<td>' . htmlspecialchars($item['resume_for']) . '</td>';
     echo '<td><a href="formation/view.php?id=' . $item['id_formation'] . '">view</a></td>';
     echo '<td><a href="formation/update.php?id=' . $item['id_formation'] . '">Update</a></td>';

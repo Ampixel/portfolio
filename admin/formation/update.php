@@ -19,23 +19,23 @@ require 'update_for.php';
             <table>
                 <tr>
                     <td>Titre</td>
-                    <td><input type="text" name="titre" value="<?php echo ' ' . $item['title_for']; ?>" /></td>
+                    <td><input type="text" name="titre" value="<?php echo ' ' . htmlspecialchars($item['title_for']); ?>" /></td>
                 </tr>
                 <tr>
                     <td>School</td>
-                    <td><input type="text" name="school" value="<?php echo ' ' . $item['school']; ?>" /></td>
+                    <td><input type="text" name="school" value="<?php echo ' ' . htmlspecialchars($item['school']); ?>" /></td>
                 </tr>
                 <tr>
                     <td>date début</td>
-                    <td><input type="date" name="start_date" value="<?php echo ' ' . $item['start_date_for']; ?>" /></td>
+                    <td><input type="date" name="start_date" value="<?php echo substr($item['start_date_exp'], 0, 10); ?>" /></td>
                 </tr>
                 <tr>
                     <td>date fin</td>
-                    <td><input type="date" name="end_date" value="<?php echo ' ' . $item['end_date_for']; ?>" /></td>
+                    <td><input type="date" name="end_date" value="<?php echo substr($item['end_date_exp'], 0, 10); ?>" /></td>
                 </tr>
                 <tr>
                     <td>Résumé</td>
-                    <td><input type="text" name="resume" value="<?php echo ' ' . $item['resume_for']; ?>" /></td>
+                    <td><input type="text" name="resume" value="<?php echo ' ' . htmlspecialchars($item['resume_for']); ?>" /></td>
                 </tr>
 
             </table>

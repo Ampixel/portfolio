@@ -8,7 +8,7 @@ if(!empty($_GET['id']))
 }
 
 $db = Connection::connect();
-$requete = $db->prepare("SELECT * FROM formation WHERE formation.id_formation = ?");
+$requete = $db->prepare("SELECT * FROM formation WHERE id_formation = ?");
 $requete->execute(array($id));
 $item = $requete->fetch();
 Connection::disconnect();

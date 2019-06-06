@@ -17,7 +17,6 @@ if (!empty($_POST)) {
 
     $requete = $bdd->prepare('UPDATE formation SET title_for = ?, school = ?, start_date_for = ?, end_date_for = ?, resume_for = ? WHERE  id_formation = ?') or die(print_r($bdd->errorInfo()));
     $requete->execute(array($titre, $school, $startDate, $endDate, $resume, $id));
-    $item = $requete->fetch();
 
     header('location: ../');
     exit();
@@ -29,11 +28,6 @@ if (!empty($_POST)) {
     $requete = $bdd->prepare("SELECT * FROM formation WHERE id_formation = ?");
     $requete->execute(array($id));
     $item = $requete->fetch();
-    // $titre = $item['title_for'];
-    // $school = $item['school'];
-    // $startDate = $item['start_date_for'];
-    // $endDate = $item['end_date_for'];
-    // $resume = $item['resume_for'];
 
     Connection::disconnect();
 }

@@ -17,7 +17,6 @@ if (!empty($_POST)) {
 
     $requete = $bdd->prepare('UPDATE experience SET title_exp = ?, company = ?, start_date_exp = ?, end_date_exp = ?, resume_exp = ? WHERE  id_experience = ?') or die(print_r($bdd->errorInfo()));
     $requete->execute(array($titre, $company, $startDate, $endDate, $resume, $id));
-    $item = $requete->fetch();
 
     header('location: ../');
     exit();

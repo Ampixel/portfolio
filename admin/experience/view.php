@@ -17,23 +17,23 @@ require 'view_exp.php';
     <table>
         <tr>
             <td>Titre</td>
-            <td><?php echo ' '.htmlspecialchars($item['title_exp']) ?></td></td>
+            <td><?php echo ' '.htmlspecialchars($item['title_exp']); ?></td>
         </tr>
         <tr>
             <td>Entreprise</td>
-            <td><?php echo ' '.htmlspecialchars($item['company']) ?></td>
+            <td><?php echo ' '.htmlspecialchars($item['company']); ?></td>
         </tr>
         <tr>
             <td>date début</td>
-            <td><?php echo ' '.htmlspecialchars($item['start_date_exp']) ?></td>
+            <td><?php echo substr($item['start_date_exp'] , 0 , 10 ); ?></td>
         </tr>
         <tr>
             <td>date fin</td>
-            <td><?php echo ' '.htmlspecialchars($item['end_date_exp']) ?></td>
+            <td><?php echo substr($item['end_date_exp'] , 0 , 10 ); ?></td>
         </tr>
         <tr>
             <td>Résumé</td>
-            <td><?php echo ' '.htmlspecialchars($item['resume_exp']) ?></td>
+            <td><?php echo ' '.htmlspecialchars($item['resume_exp']); ?></td>
         </tr>
     </table>
     <a href="update.php">Modifier</a>

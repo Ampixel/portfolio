@@ -1,6 +1,5 @@
 <?php
 session_start();
-// require('element.php');
 ?>
 <!DOCTYPE html>
 
@@ -14,13 +13,18 @@ session_start();
 <body>
     <!-- HEADER -->
     <header class="container">
-        <a href="page_connexion.php">Se connecter</a>
         <nav>
             <ul>
-                <li>menu</li>
+                <li><?php 
+                if(isset($_SESSION['connect'])){
+                    echo '<a href="admin/index.php">Administrer</a>';
+                }else{
+                    echo'<a href="page_connexion.php">Se connecter</a></li>';
+                }
+                ?></li>
             </ul>
         </nav>
-        <div>
+        <div class="info">
             <p>Images du logo</p>
             <!-- <img src="img/logoampixel-orange.png" alt="logo" id="logo"> -->
             <h1>Monardo Amandine</h1>
@@ -29,36 +33,48 @@ session_start();
     </header>
     <!-- FIN HEADER -->
     <!-- SECTION RESUME -->
-    <section id="resume" >
+    <section id="resume">
         <div class="container">
             <div class="section_title">
                 <h2>My resume</h2>
                 <span class="border"></span>
             </div>
-            <div>
-                <div class="element_category">
-                    <h3>Expériences</h3>
-                    <div class="element_category_icon">
-                        <div class="iconspace">
-                        <i class="fa fa-folder-open"></i>
+            <div class="section">
+                <div>
+                    <hr class="separation" />
+                </div>
+                <!-- experiences -->
+                <div>
+                    <div class="element_category">
+                        <a class="elementTitre">Expériences</a>
+                        <div class="element_category_icon">
+                            <div class="iconspace">
+                                <i class="fa fa-folder"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <?php include('element_exp.php') ?>
-                </div>
-            </div>
-            <div class="for_category">
-                <div class="element_category ">
-                    <h3>Formations</h3>
-                    <div class="element_category_icon">
-                        <div class="iconspace">
-                        <i class="fa fa-book"></i>
-                        </div>
+                    <div>
+                        <?php include('element_exp.php') ?>
                     </div>
                 </div>
-                <div>
-                    <?php include('element_for.php') ?>
+                <!-- formation -->
+                <div class="for_category">
+                    <div class="element_category ">
+                        <a class="elementTitre">Formations</a>
+                        <div class="element_category_icon">
+                            <div class="iconspace">
+                                <i class="fa fa-book"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <?php include('element_for.php') ?>
+                    </div>
+                    <div class="element_category_icon">
+                    </div>
+                </div>
+                <div class="iconspace_end">
+                    <i class="fa fa-bookmark"></i>
                 </div>
             </div>
         </div>

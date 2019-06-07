@@ -28,6 +28,10 @@ require 'view_for.php';
                     <td><?php echo substr($item['start_date_for'], 0, 10); ?></td>
                 </tr>
                 <tr>
+                <tr>
+                    <td>Toujours en cours</td>
+                    <td><?php echo $item['derniere_for']; ?></td>
+                </tr>
                     <td>date fin</td>
                     <td><?php echo substr($item['end_date_for'], 0, 10); ?></td>
                 </tr>

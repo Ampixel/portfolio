@@ -35,6 +35,10 @@ require 'insert_for.php';
             <td><input type="date" name="end_date" required/></td>
         </tr>
         <tr>
+            <td>Toujours en cours ?</td>
+            <td><input type="checkbox" name="tjrs" value="1" /></td>
+        </tr>
+        <tr>
             <td>Résumé</td>
             <td><input type="text" name="resume" /></td>
         </tr>

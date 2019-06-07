@@ -27,11 +27,15 @@ require 'update_for.php';
                 </tr>
                 <tr>
                     <td>date début</td>
-                    <td><input type="date" name="start_date" value="<?php echo substr($item['start_date_exp'], 0, 10); ?>" /></td>
+                    <td><input type="date" name="start_date" value="<?php echo substr($item['start_date_for'], 0, 10); ?>" /></td>
+                </tr>
+                <tr>
+                    <td>Toujours en cours</td>
+                    <td><input type="checkbox" name="tjrs" value="<?php echo $item['derniere_for']; ?>" /></td>
                 </tr>
                 <tr>
                     <td>date fin</td>
-                    <td><input type="date" name="end_date" value="<?php echo substr($item['end_date_exp'], 0, 10); ?>" /></td>
+                    <td><input type="date" name="end_date" value="<?php echo substr($item['end_date_for'], 0, 10); ?>" /></td>
                 </tr>
                 <tr>
                     <td>Résumé</td>

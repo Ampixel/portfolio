@@ -7,27 +7,32 @@ $item = $requete->fetch();
 while ($item = $requete->fetch()) {
 
     if ($item['id_formation'] % 2) {
-        echo '<table class="element_rigth element_post">';
-        echo '<tr>';
-        echo '<td>' . htmlspecialchars($item['title_for']) . '</td>';
-        echo '<td>' . htmlspecialchars($item['school']) . '</td>';
-        echo '<td>' . substr($item['start_date_for'], 0, 10) . '</td>';
-        echo '<td>' . substr($item['end_date_for'], 0, 10) . '</td>';
-        echo '<td>' . htmlspecialchars($item['resume_for']) . '</td>';
-        echo '</tr>';
-        echo '</table><br/>';
+        echo '<div class="element_right element_post">';
+        echo '<div class="contener">
+                <div class="element_post_icon"></div>';
+        echo '<h4>' . htmlspecialchars($item['title_for']) . '</h4>';
+        echo '<div class="sous-titre">
+            <p>
+                <span>' . htmlspecialchars($item['school']) . '</span>
+                <span>' . substr($item['start_date_for'], 0, 10) . ' 
+                au ' . substr($item['end_date_for'], 0, 10) . '</span>
+            </p></div>';
+            echo '<div class="paragraphe"><p>' . htmlspecialchars($item['resume_for']) . '</p></div>';
+        echo '</div>';
+        echo '</div><br/>';
     } else {
-        while ($item = $requete->fetch()) {
-            echo '<table  class="element_left element_post">';
-            echo '<tr>';
-            echo '<td>' . htmlspecialchars($item['title_for']) . '</td>';
-            echo '<td>' . htmlspecialchars($item['school']) . '</td>';
-            echo '<td>' . substr($item['start_date_for'], 0, 10) . '</td>';
-            echo '<td>' . substr($item['end_date_for'], 0, 10) . '</td>';
-            echo '<td>' . htmlspecialchars($item['resume_for']) . '</td>';
-            echo '</tr>';
-            echo '</table><br/>';
-        }
+        echo '<div class="element_left  element_post ">';
+        echo '<div class="contener"><div class="element_post_icon_left"></div>';
+        echo '<h4>' . htmlspecialchars($item['title_for']) . '</h4>';
+        echo '<div class="sous-titre">
+                <p>
+                    <span>' . htmlspecialchars($item['school']) . '</span>
+                    <span>' . substr($item['start_date_for'], 0, 10) . ' 
+                au ' . substr($item['end_date_for'], 0, 10) . '</span>
+                </p></div>';
+        echo '<div class="paragraphe"><p>' . htmlspecialchars($item['resume_for']) . '</p></div>';
+        echo '</div>';
+        echo '</div><br/>';
     }
 }
 

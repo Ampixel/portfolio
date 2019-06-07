@@ -8,7 +8,7 @@ session_start();
     <meta charset="utf-8">
     <title>PORTFOLIO</title>
     <link rel="stylesheet" type="text/css" href="design/default.scss">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -39,7 +39,9 @@ session_start();
                 <div class="element_category">
                     <h3>Expériences</h3>
                     <div class="element_category_icon">
-                        <div class="iconspace"></div>
+                        <div class="iconspace">
+                        <i class="fa fa-folder-open"></i>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -50,7 +52,9 @@ session_start();
                 <div class="element_category ">
                     <h3>Formations</h3>
                     <div class="element_category_icon">
-                        <div class="iconspace"></div>
+                        <div class="iconspace">
+                        <i class="fa fa-book"></i>
+                        </div>
                     </div>
                 </div>
                 <div>

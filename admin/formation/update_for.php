@@ -15,6 +15,11 @@ if (!empty($_POST)) {
     $endDate = checkInput($_POST['end_date']);
     $resume = checkInput($_POST['resume']);
     $tjrs = $_POST['tjrs'];
+    if(!empty($_POST['tjrs'])){
+        $value = 1;
+    }else{
+        $value = 0;
+    }
 
     $requete = $bdd->prepare('UPDATE formation SET title_for = ?, school = ?, start_date_for = ?, end_date_for = ?, resume_for = ?, derniere_for = ? WHERE  id_formation = ?') or die(print_r($bdd->errorInfo()));
     $requete->execute(array($titre, $school, $startDate, $endDate, $resume, $tjrs, $id));

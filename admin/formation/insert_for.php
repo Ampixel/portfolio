@@ -12,9 +12,9 @@ if(isset($_POST['titre']) && isset($_POST['school']) && isset($_POST['start_date
 
 $requete = $bdd->prepare('INSERT INTO formation(title_for, school, start_date_for, end_date_for, resume_for, derniere_for) VALUE (?, ?, ?, ?, ?, ?)') OR die(print_r($bdd->errorInfo()));
 $requete->execute(array($titre, $school, $startDate, $endDate, $resume, $tjrs));
-var_dump($requete);
 header('location: ../');
 exit();
+
 
 }
 

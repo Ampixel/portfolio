@@ -1,7 +1,7 @@
 <?php
 require 'src/connection.php';
 $db = Connection::connect();
-$requete = $db->query('SELECT * FROM experience');
+$requete = $db->query('SELECT * FROM experience ORDER BY id_experience');
 $item = $requete->fetch();
 
 while ($item = $requete->fetch()) {

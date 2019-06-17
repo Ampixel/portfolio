@@ -34,6 +34,12 @@ require 'update_for.php';
                     <td><input type="checkbox" name="tjrs" value="<?php echo $item['derniere_for']; ?>" /></td>
                 </tr>
                 <tr>
+                    <td>Toujours en cours ?</td>
+                    <td><input type="radio" name="tjrs" value="1" id="tjrs" />Oui</td>
+                    <td><input type="radio" name="tjrs" value="0" id="tjrs" />Non</td>
+                
+                </tr>
+                <tr>
                     <td>date fin</td>
                     <td><input type="date" name="end_date" value="<?php echo substr($item['end_date_for'], 0, 10); ?>" /></td>
                 </tr>

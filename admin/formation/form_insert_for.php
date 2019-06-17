@@ -36,7 +36,8 @@ require 'insert_for.php';
         </tr>
         <tr>
             <td>Toujours en cours ?</td>
-            <td><input type="checkbox" name="tjrs" value="1" /></td>
+            <td><input type="radio" name="tjrs" value="1" id="tjrs" />Oui</td>
+            <td><input type="radio" name="tjrs" value="0" id="tjrs" />Non</td>
         </tr>
         <tr>
             <td>Résumé</td>

@@ -40,7 +40,7 @@ require 'view_for.php';
                     <td><?php echo ' ' . htmlspecialchars($item['resume_for']) ?></td>
                 </tr>
             </table>
-            <a href="update.php">Modifier</a>
+            <?php echo'<a id="btn-update" href="update.php?id=' . $item['id_formation'] . '">Modifier</a>'?>
             <a href="../index.php">retour liste</a>
         </form>
     </div>

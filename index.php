@@ -70,8 +70,6 @@ session_start();
                     <div>
                         <?php include('element_for.php') ?>
                     </div>
-                    <div class="element_category_icon">
-                    </div>
                 </div>
                 <div class="iconspace_end">
                     <i class="fa fa-bookmark"></i>
